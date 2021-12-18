@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/miAdd"
+        android:id="@+id/miFacultyAdd"
         android:title="Добавить" />
     <item
-        android:id="@+id/miChange"
+        android:id="@+id/miFacultyChange"
         android:title="Изменить" />
     <item
-        android:id="@+id/miDelete"
+        android:id="@+id/miFacultyDelete"
         android:title="Удалить" />
     <item
-        android:id="@+id/miAbout"
+        android:id="@+id/miFacultyAbout"
         android:title="О программе" />
     <item
-        android:id="@+id/miExit"
+        android:id="@+id/miFacultyExit"
         android:title="Выход" />
 </menu>

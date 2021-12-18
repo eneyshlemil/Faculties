@@ -80,11 +80,11 @@ public class GroupInfoActivity extends AppCompatActivity {
     StudentListAdapter mStudentListAdapter;
 
     public void createStudentList(View view) {
-        ListView listView = findViewById(R.id.lvList2);
+        ListView listView = findViewById(R.id.lvGroupList2);
         mStudentListAdapter=new StudentListAdapter(mStudents,this);
         listView.setAdapter(mStudentListAdapter);
 
-        ((LinearLayout) findViewById(R.id.llInput)).setVisibility(View.VISIBLE);
+        ((LinearLayout) findViewById(R.id.llGroupInput)).setVisibility(View.VISIBLE);
 
 
         AdapterView.OnItemClickListener clStudent = new AdapterView.OnItemClickListener() {
@@ -101,7 +101,7 @@ public class GroupInfoActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.miAbout:{
+            case R.id.miGroupAbout:{
                 AlertDialog.Builder infoDialog = new AlertDialog.Builder(GroupInfoActivity.this);
                 infoDialog.setTitle("О группе");
                 infoDialog.setMessage("Это список студентов группы");
@@ -110,11 +110,11 @@ public class GroupInfoActivity extends AppCompatActivity {
                 infoDialog.show();
                 return true;
             }
-            case R.id.miExit:{
+            case R.id.miGroupExit:{
                 finish();
                 return true;
             }
-            case R.id.miAdd:{
+            case R.id.miGroupAdd:{
 
                 Intent intent = new Intent(GroupInfoActivity.this, StudentInfoActivity.class);
                 mStudentListAdapter.setPosition(mStudents.size());
@@ -122,7 +122,7 @@ public class GroupInfoActivity extends AppCompatActivity {
                 mIntentActivityResultLauncher.launch(intent);
                 return true;
             }
-            case R.id.miChange:{
+            case R.id.miGroupChange:{
                 if (mStudentListAdapter.getPosition() != -1 && mStudentListAdapter.getPosition() < mStudents.size()) {
                     Intent intent = new Intent(GroupInfoActivity.this, StudentInfoActivity.class);
                     intent.putExtra("student", mStudents.get(mStudentListAdapter.getPosition()));
@@ -131,7 +131,7 @@ public class GroupInfoActivity extends AppCompatActivity {
                         "Ошибка выбора", Toast.LENGTH_SHORT).show();
                 return true;
             }
-            case R.id.miDelete:{
+            case R.id.miGroupDelete:{
                 if (mStudentListAdapter.getPosition() != -1) mStudents.remove(mStudentListAdapter.getPosition());
                 else Toast.makeText(getApplicationContext(),
                         "Ошибка выбора", Toast.LENGTH_SHORT).show();
@@ -146,12 +146,12 @@ public class GroupInfoActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.group_menu, menu);
         return true;
     }
 
 
-    @Override //NEW1011
+    @Override
     protected void onDestroy() {
         if (mStudents != null){
             SharedPreferences.Editor ed = getPreferences(MODE_PRIVATE).edit();

@@ -5,20 +5,20 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/llTop"
+        android:id="@+id/llGroupTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"/>
 
     <LinearLayout
-        android:id="@+id/llMiddle"
+        android:id="@+id/llGroupMiddle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
 
         <ListView
-            android:id="@+id/lvList2"
+            android:id="@+id/lvGroupList2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
@@ -28,13 +28,13 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/llBottom"
+        android:id="@+id/llGroupBottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/llInput"
+            android:id="@+id/llGroupInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -56,7 +56,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/bAddStudent"
+                android:id="@+id/bGroupAddStudent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
