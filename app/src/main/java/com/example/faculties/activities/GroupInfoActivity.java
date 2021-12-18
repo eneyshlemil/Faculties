@@ -166,5 +166,4 @@ public class GroupInfoActivity extends AppCompatActivity {
         }
         super.onDestroy();
     }
-
 }

@@ -9,12 +9,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.faculties.R;
-import com.example.faculties.model.Student;
+import com.example.faculties.model.Group;
 
 import java.util.ArrayList;
 
 public class GroupListAdapter extends BaseAdapter {
-    ArrayList<Student> mStudents = new ArrayList<>();
+    ArrayList<Group> mGroups = new ArrayList<>();
     Context mContext;
     LayoutInflater mInflater;
     private int mPosition = -1;
@@ -27,8 +27,8 @@ public class GroupListAdapter extends BaseAdapter {
         return mPosition;
     }
 
-    public GroupListAdapter(ArrayList<Student> students, Context context) {
-        mStudents = students;
+    public GroupListAdapter(ArrayList<Group> groups, Context context) {
+        mGroups = groups;
         mContext = context;
         mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
@@ -38,34 +38,24 @@ public class GroupListAdapter extends BaseAdapter {
     }
 
     @Override
-    public int getCount() { return mStudents.size(); }
+    public int getCount() { return mGroups.size(); }
 
     @Override
-    public Object getItem(int position){ return mStudents.get(position); }
+    public Object getItem(int position){ return mGroups.get(position); }
 
     @Override
     public long getItemId(int position) {return position;}
 
     @Override
     public View getView(int position, View view, ViewGroup parent){
-        view = mInflater.inflate(R.layout.student_element, parent, false);
-        if (mStudents.isEmpty()) return view;
+        view = mInflater.inflate(R.layout.group_element, parent, false);
+        if (mGroups.isEmpty()) return view;
 
-        ((TextView) view.findViewById(R.id.tvElementFIO)).setText(mStudents.get(position).getFIO());
-        ((TextView) view.findViewById(R.id.tvElementFaculty)).setText(mStudents.get(position).getFaculty());
-        ((TextView) view.findViewById(R.id.tvElementGroup)).setText(mStudents.get(position).getGroup());
+        ((TextView) view.findViewById(R.id.tvStudentElementGroupName)).setText(mGroups.get(position).getmName());
         if (position == mPosition) {
-            ((TextView) view.findViewById(R.id.tvElementFIO)).setTextColor(
+            ((TextView) view.findViewById(R.id.tvStudentElementGroupName)).setTextColor(
                     mContext.getResources().getColor(R.color.red)
             );
-            ((TextView) view.findViewById(R.id.tvElementFaculty)).setTextColor(
-                    mContext.getResources().getColor(R.color.red)
-            );
-            ((TextView) view.findViewById(R.id.tvElementGroup)).setTextColor(
-                    mContext.getResources().getColor(R.color.red)
-            );
-            ((LinearLayout) view.findViewById(R.id.llElement)).setBackgroundColor(
-                    mContext.getResources().getColor(R.color.white));
         }
         return view;
     }

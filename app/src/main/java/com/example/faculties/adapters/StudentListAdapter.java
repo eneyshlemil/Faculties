@@ -51,20 +51,20 @@ public class StudentListAdapter extends BaseAdapter {
         view = mInflater.inflate(R.layout.student_element, parent, false);
         if (mStudents.isEmpty()) return view;
 
-        ((TextView) view.findViewById(R.id.tvElementFIO)).setText(mStudents.get(position).getFIO());
-        ((TextView) view.findViewById(R.id.tvElementFaculty)).setText(mStudents.get(position).getFaculty());
-        ((TextView) view.findViewById(R.id.tvElementGroup)).setText(mStudents.get(position).getGroup());
+        ((TextView) view.findViewById(R.id.tvStudentElementFIO)).setText(mStudents.get(position).getFIO());
+        ((TextView) view.findViewById(R.id.tvStudentElementFaculty)).setText(mStudents.get(position).getFaculty());
+        ((TextView) view.findViewById(R.id.tvStudentElementGroup)).setText(mStudents.get(position).getGroup());
         if (position == mPosition) {
-            ((TextView) view.findViewById(R.id.tvElementFIO)).setTextColor(
+            ((TextView) view.findViewById(R.id.tvStudentElementFIO)).setTextColor(
                     mContext.getResources().getColor(R.color.red)
             );
-            ((TextView) view.findViewById(R.id.tvElementFaculty)).setTextColor(
+            ((TextView) view.findViewById(R.id.tvStudentElementFaculty)).setTextColor(
                     mContext.getResources().getColor(R.color.red)
             );
-            ((TextView) view.findViewById(R.id.tvElementGroup)).setTextColor(
+            ((TextView) view.findViewById(R.id.tvStudentElementGroup)).setTextColor(
                     mContext.getResources().getColor(R.color.red)
             );
-            ((LinearLayout) view.findViewById(R.id.llElement)).setBackgroundColor(
+            ((LinearLayout) view.findViewById(R.id.llStudentStudentElement)).setBackgroundColor(
                     mContext.getResources().getColor(R.color.white));
         }
         return view;
