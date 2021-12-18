@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miAdd"
+        android:title="Добавить" />
+    <item
+        android:id="@+id/miChange"
+        android:title="Изменить" />
+    <item
+        android:id="@+id/miDelete"
+        android:title="Удалить" />
+    <item
+        android:id="@+id/miAbout"
+        android:title="О программе" />
+    <item
+        android:id="@+id/miExit"
+        android:title="Выход" />
+</menu>

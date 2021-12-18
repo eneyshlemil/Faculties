@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/activity_student_info.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/main_ll.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/student_element.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/student_input.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/subject_element.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/subject_input.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/menu/popup_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/menu/student_info_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Android API 31 Platform" project-jdk-type="Android SDK" />
+</project>
