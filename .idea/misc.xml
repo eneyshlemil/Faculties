@@ -3,12 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/activity_faculty.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/activity_faculty_info.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/activity_group.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/activity_student_info.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/app_bar_main.xml" value="0.1" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/content_faculty_info.xml" value="0.536" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/fragment_faculty.xml" value="0.1" />
         <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/main_ll.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/nav_header_main.xml" value="0.1" />
         <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/student_element.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/student_input.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/subject_element.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/layout/subject_input.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
         <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/menu/popup_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/tatau/AndroidStudioProjects/StudentsListOther/app/src/main/res/menu/student_info_menu.xml" value="0.25416666666666665" />

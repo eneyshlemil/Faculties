@@ -9,8 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Faculties">
+        <activity
+            android:name=".activities.FacultyInfoActivity"
+            android:exported="false"
+            android:label="@string/title_activity_faculty_info"
+            android:theme="@style/Theme.Faculties.NoActionBar" />
         <activity android:name=".activities.StudentInfoActivity" />
-        <activity android:name=".activities.GroupInfoActivity"
+        <activity
+            android:name=".activities.GroupInfoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
